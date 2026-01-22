@@ -8,6 +8,10 @@ app.use(express.json());
 
 app.use("/api", assessmentRoutes);
 
+app.get("/get",(req,res)=>{
+    res.send("Server is working")
+})
+
 app.listen(5000, () => {
   console.log("Backend running on http://localhost:5000");
 });
